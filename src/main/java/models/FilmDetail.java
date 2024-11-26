@@ -9,7 +9,7 @@ public class FilmDetail {
                 	f.description,
                 	f.release_year,
                 	c."name" as category,
-                	trim(l."name") as language,
+                	l."name" as language,
                 	f.rating
                 from film f
                 inner join film_category fc on fc.film_id = f.film_id
